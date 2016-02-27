@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+	<ace:panel id="panel_reserva" header="Confirme su reserva"
+		styleClass="panel_reserva">
+		<h:form id="reservaVuelos">
+			
+				<h:panelGrid columns="2">
+
+					<h:outputText value="Login" />
+					<h:inputText id="setlogin" />
+					<h:outputText value="Passsword" />
+					<h:inputText id="setpassword" />
+					<h:outputText value="Repita el password" />
+					<h:inputText id="rpassword" />
+
+					<h:outputText value="Nombre" />
+					<h:inputText id="setnombre" />
+					<h:outputText value="Apellidos" />
+					<h:inputText id="setapellidos" />
+					<h:outputText value="Domicilio" />
+					<h:inputText id="setdomicilio" />
+					<h:outputText value="Pais" />
+					<h:inputText id="setpais" />
+					<h:outputText value="Provincia" />
+					<h:inputText id="setprovincia" />
+					<h:outputText value="Ciudad" />
+					<h:inputText id="setciudad" />
+
+					<h:outputText value="Email" />
+					<h:inputText id="setemail" />
+					<h:outputText value="DNI" />
+					<h:inputText id="setdni" />
+				</h:panelGrid>
+				<h:panelGrid columns="3"><ace:pushButton id="btnComprar" value="Comprar" actionListener="#{reservaBean.acciones}" />
+				<ace:pushButton id="btnReserva" value="Reservar por24 horas" actionListener="#{reservaBean.acciones}" />
+				
+			</h:panelGrid>
+			<ace:pushButton id="btnVolverAVuelos" value="Volver" actionListener="#{reservaBean.acciones}" />
+	</h:panelGrid>
+
+		</h:form>
+	</ace:panel>
+</ui:composition>

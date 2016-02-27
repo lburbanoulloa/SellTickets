@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-autowire="byName" default-lazy-init="true"
+	xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="configLocation"
+			value="classpath:com/atrium/hibernate/hibernate.cfg.xml">
+		</property>
+	</bean>
+	<bean id="vuelosDAO" class="com.atrium.hibernate.DAO.ext.VuelosDAOext"
+		scope="prototype" />
+	<bean id="reservasDAO" class="com.atrium.hibernate.DAO.ReservasDAO"
+		scope="prototype" />
+	<bean id="tareasDAO" class="com.atrium.hibernate.DAO.TareasDAO"
+		scope="prototype" />
+	<bean id="rolesDAO" class="com.atrium.hibernate.DAO.RolesDAO"
+		scope="prototype" />
+	<bean id="usuarioavionDAO" class="com.atrium.hibernate.DAO.UsuarioavionDAO"
+		scope="prototype" />
+	<bean id="provinciasDAO" class="com.atrium.hibernate.DAO.ProvinciasDAO"
+		scope="prototype" />
+	<bean id="compañiasAereasDAO" class="com.atrium.hibernate.DAO.ext.CompañiasAereasDAOext"
+		scope="prototype" />
+	<bean id="paisDAO" class="com.atrium.hibernate.DAO.PaisDAO" scope="prototype" />
+	<bean id="municipiosDAO" class="com.atrium.hibernate.DAO.MunicipiosDAO"
+		scope="prototype" />
+	<bean id="aeropuertosDAO" class="com.atrium.hibernate.DAO.ext.AeropuertosDAOext"
+		scope="prototype" />
+
+	<bean id="gestion_aeropuertos" class="com.atrium.hibernate.modelo.Gestion_aeropuertos"
+		scope="prototype" />
+	<bean id="gestion_compañias" class="com.atrium.hibernate.modelo.Gestion_compañias"
+		scope="prototype" />
+	<bean id="gestion_vuelos" class="com.atrium.hibernate.modelo.Gestion_vuelos"
+		scope="prototype" />
+	<bean id="gestion_usuarios" class="com.atrium.hibernate.modelo.Gestion_usuarios"
+		scope="prototype" />
+	<bean id="gestion_reservas" class="com.atrium.hibernate.modelo.Gestion_reservas"
+		scope="prototype" />
+	<bean id="gestion_municipios" class="com.atrium.hibernate.modelo.Gestion_municipios"
+		scope="prototype" />
+	<bean id="gestion_paises" class="com.atrium.hibernate.modelo.Gestion_paises"
+		scope="prototype" />
+	<bean id="gestion_provincias" class="com.atrium.hibernate.modelo.Gestion_provincias"
+		scope="prototype" />		
+</beans>

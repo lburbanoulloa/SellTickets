@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+
+	<ace:panel id="panel_vuelos" styleClass="panel_vuelos">
+		<h:form id="vuelos">
+			<ace:panel id="panel_vuelosIda" header="Ida">
+
+				<ace:dataTable id="tablavuelosIda"
+					value="#{reservaBean.lista_vuelos}" var="vuelo" paginator="true"
+					paginatorPosition="bottom" rows="5" selectionMode="single"
+					rowSelectListener="#{reservaBean.cargar_SeleccionVuelo}"
+					rowUnselectListener="#{reservaBean.descargar_SeleccionVuelo}">
+
+					<!-- doubleClickSelect="true"<ace:column id="ididacell" headerText="id vuelo"
+						sortBy="#{vuelo.codigoVuelo}">
+						<h:outputText id="id_idaayuda" value="#{vuelo.codigoVuelo}">
+
+						</h:outputText>
+					</ace:column> -->
+					<ace:column id="fechaidacell" headerText="fecha"
+						sortBy="#{reservaBean.juntaFechaYHora(vuelo.fechaSalida,vuelo.horaSalida)}">
+						<h:outputText id="salidaidaf_ayuda" value="#{reservaBean.juntaFechaYHora(vuelo.fechaSalida,vuelo.horaSalida)}">
+							<f:convertDateTime type="date" pattern="DD/MM/YY" />
+						</h:outputText>
+					</ace:column>
+					<ace:column id="salidaidacell" headerText="hora salida"
+						sortBy="#{reservaBean.juntaFechaYHora(vuelo.fechaSalida,vuelo.horaSalida)}">
+						<!--  <h:outputText id="salidaf_ayuda" value="#{vuelo.fechaSalida}">
+						<f:convertDateTime type="date" pattern="DD/MM/YY" />
+					</h:outputText> - -->
+						<h:outputText id="salidaidah_ayuda" value="#{reservaBean.juntaFechaYHora(vuelo.fechaSalida,vuelo.horaSalida)}" sortPriority="0">
+							  <f:convertDateTime type="time" pattern="HH:mm"/>
+						</h:outputText>
+					</ace:column>
+					<ace:column id="llegadaidacell" headerText="hora llegada"
+						sortBy="#{reservaBean.juntaFechaYHora(vuelo.fechaLlegada,vuelo.horaLlegada)}">
+						<h:outputText id="llegadaida_ayuda" value="#{reservaBean.juntaFechaYHora(vuelo.fechaLlegada,vuelo.horaLlegada)}">
+							<f:convertDateTime type="time" pattern="HH:mm" />
+						</h:outputText>
+					</ace:column>
+
+					<ace:column id="Compañiaidacell" headerText="compañia">
+						<!--  <h:outputText id="compañia_ayuda" value="#{vuelo.compañiasAereas.nombreCompañia}" />-->
+						<h:outputText id="compañia_ayuda"
+							value="#{reservaBean.getCompañiaById(vuelo.compañiasAereas.codigoCompañia).nombreCompañia}" />
+					</ace:column>
+
+
+					<ace:column id="Plazasidacell" headerText="numero plazas">
+						<h:outputText id="plazas_ayuda"
+							value="#{vuelo.numeroPasajeros-vuelo.asientosVendidos}" />
+					</ace:column>
+
+					<ace:column id="Tarifaidacell" headerText="tarifa">
+						<h:outputText id="tarifaida_ayuda" value="#{vuelo.tarifaIda}">
+							<f:convertNumber type="currency" currencySymbol="€" />
+						</h:outputText>
+					</ace:column>
+				</ace:dataTable>
+
+			</ace:panel>
+			<ace:panel id="panel_vuelosVuelta" header="Vuelta"
+				visible="#{reservaBean.ayudavuelos_visible}">
+
+				<ace:dataTable id="tablavuelosvuelta"
+					value="#{reservaBean.lista_vuelos}" var="vuelo" paginator="true"
+					paginatorPosition="bottom" rows="5" selectionMode="single"
+					rowSelectListener="#{reservaBean.cargar_SeleccionVuelo}"
+					rowUnselectListener="#{reservaBean.descargar_SeleccionVuelo}">
+					<!--doubleClickSelect="true" <ace:column id="idvueltacell" headerText="id vuelo"
+						sortBy="#{vuelo.codigoVuelo}">
+						<h:outputText id="idvuelta_ayuda" value="#{vuelo.codigoVuelo}">
+
+						</h:outputText>
+					</ace:column> -->
+					<ace:column id="fechacell" headerText="fecha"
+						sortBy="#{reservaBean.juntaFechaYHora(vuelo.fechaSalida,vuelo.horaSalida)}">
+						<h:outputText id="salidavueltaf_ayuda"
+							value="#{reservaBean.juntaFechaYHora(vuelo.fechaSalida,vuelo.horaSalida)}">
+							<f:convertDateTime type="date" pattern="DD/MM/YY" />
+						</h:outputText>
+					</ace:column>
+					<ace:column id="salidavueltacell" headerText="hora salida"
+						sortBy="#{reservaBean.juntaFechaYHora(vuelo.fechaSalida,vuelo.horaSalida)}"  sortPriority="0">
+						<!--  <h:outputText id="salidaf_ayuda" value="#{vuelo.fechaSalida}">
+						<f:convertDateTime type="date" pattern="DD/MM/YY" />
+					</h:outputText> - -->
+						<h:outputText id="salidavueltah_ayuda" value="#{reservaBean.juntaFechaYHora(vuelo.fechaSalida,vuelo.horaSalida)}">
+							<f:convertDateTime type="time" pattern="HH:mm" />
+						</h:outputText>
+					</ace:column>
+					<ace:column id="llegadavueltacell" headerText="hora llegada"
+						sortBy="#{reservaBean.juntaFechaYHora(vuelo.fechaLlegada,vuelo.horaLlegada)}">
+						<h:outputText id="llegadavuelta_ayuda"
+							value="#{reservaBean.juntaFechaYHora(vuelo.fechaLlegada,vuelo.horaLlegada)}">
+							<f:convertDateTime type="time" pattern="HH:mm" />
+						</h:outputText>
+					</ace:column>
+
+					<ace:column id="Compañiavueltacell" headerText="compañia">
+						<!--  <h:outputText id="compañia_ayuda" value="#{vuelo.compañiasAereas.nombreCompañia}" />-->
+						<h:outputText id="compañiavuelta_ayuda"
+							value="#{reservaBean.getCompañiaById(vuelo.compañiasAereas.codigoCompañia).nombreCompañia}" />
+					</ace:column>
+
+
+					<ace:column id="Plazasvueltacell" headerText="numero plazas">
+						<h:outputText id="plazasvuelta_ayuda"
+							value="#{vuelo.numeroPasajeros-vuelo.asientosVendidos}" />
+					</ace:column>
+
+					<ace:column id="Tarifavueltacell" headerText="tarifa">
+						<h:outputText id="tarifavuelta_ayuda" value="#{vuelo.tarifaIda}">
+							<f:convertNumber type="currency" currencySymbol="€" />
+						</h:outputText>
+					</ace:column>
+				</ace:dataTable>
+
+			</ace:panel>
+			<ace:pushButton id="btnvolver" value="Volver"
+				actionListener="#{reservaBean.acciones}" />
+		</h:form>
+
+	</ace:panel>
+</ui:composition>

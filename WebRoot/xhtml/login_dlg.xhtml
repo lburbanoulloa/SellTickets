@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+	<ace:dialog id="dlgLogin" widgetVar="sampleDialog"
+		header="Login en el sistema" draggable="true" modal="true"
+		resizable="false" position="center" closable="true"
+		visible="#{reservaBean.ayudaaeropuertos_visible}">
+		<ace:ajax event="close"
+			listener="#{reservaBean.cierre_AyudaAeropuertos}" />
+
+		<h:form id="frmLogin">
+
+			<h:panelGrid columns="1">
+				<h:panelGrid columns="2">
+
+					<h:outputText value="Login" />
+					<h:inputText id="loglogin" />
+					<h:outputText value="Passsword" />
+					<h:inputText id="logpassword" />
+
+				</h:panelGrid>
+				<ace:pushButton id="btnLogin" value="Login"
+					actionListener="#{reservaBean.acciones}" />
+			</h:panelGrid>
+
+
+		</h:form>
+	</ace:dialog>
+</ui:composition>

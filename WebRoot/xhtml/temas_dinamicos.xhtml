@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<!-- Pagina temas dinamicos -->
+<!-- fecha: 21-1-2016. -->
+<!-- version: 2.7-->
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+	<ace:panel id="panel_temas" styleClass="panel_temas">
+		<h:form id="formu_temas">
+			<h:panelGrid id="panel_temas" columns="2">
+				<h:outputText id="eti_temas" value="#{idioma['temas.eti.selector']}" />
+				<!-- CAMBIO DINAMICO DEL TEMA DE LA VISTA POR PARTE DEL USUARIO -->
+				<ace:themeSelect id="selector_temas"
+					value="#{temas_bean.tema_seleccionado}">
+					<!-- OPCION NO VALIDA EN ACE 3.3 -->
+					<!--<ace:ajax event="valueChange" execute="@this" render="@all" />-->
+					<!-- OPCION CORRECTA EN ACE 3.3 -->
+					<ace:ajax onSuccess="location.reload(true)" />
+				</ace:themeSelect>
+			</h:panelGrid>
+		</h:form>
+	</ace:panel>
+</ui:composition>

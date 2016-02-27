@@ -1,0 +1,162 @@
+/*-- Estilos colocacion elementos aplicacion --* /
+/*-- fecha:26-1-2016. -- */
+/*-- version: 2.2 -- */
+.numero {
+	text-align: right;
+}
+
+.tabla_ayudausuarios {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: auto;
+	width: auto;
+}
+
+.ventana_login {
+	position: absolute;
+	width: auto;
+	height: 180px;
+	top: 250px;
+	left: 350px;
+	z-index: 100;
+}
+
+.panel_temas {
+	background: transparent;
+	border-style: none;
+	position: absolute;
+	top: 0px;
+	right: 150px;
+	width: auto;
+	height: 75px;
+}
+
+.panel_idioma {
+	background: transparent;
+	border-style: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: auto;
+	height: 75px;
+}
+
+.panel_menudinamico {
+	background: transparent;
+	border-style: none;
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	width: auto;
+	height: 75px;
+}
+
+.panel_paginas {
+	background: transparent;
+	border-style: none;
+	position: absolute;
+	top: 165px;
+	left: 0px;
+	width: 100%;
+	height: 75px;
+}
+
+.panel_busqueda {
+	top: 250px;
+	left: 350px;
+}
+
+.panel_usuario {
+	width: auto;
+	height: auto;
+}
+
+.ui-panel-title {
+	text-align: center;
+}
+
+<!-- mios -->
+
+
+.cabecera {
+	background-color: red;
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 100%;
+	height: 100px;
+}
+
+
+.panel_imagen {
+	position: absolute;	
+	left:0px;
+	width: inherit;
+	height: inherit;	
+	border: none;
+}
+
+
+
+.panel_busqueda {
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 100px;
+	left: 100px;
+}
+
+.panel_vuelos {
+	position: absolute;
+	width: 60%;
+	height: auto;
+	top: 75px;
+	left: 70px;
+}
+
+.panel_reserva {
+	position: absolute;
+	width: 40%;
+	height: auto;
+	top: 20%;
+	left: 15%;
+}
+
+.panel_totalvuelos {
+	position: absolute;
+	width: 28%;
+	height: auto;
+	top: 100px;
+	right: 65px;
+}
+
+.panelAeropuertos {
+	position: absolute;
+	top: 100px;
+	rigth: 100px;
+	height: 400px;
+	width:400px;
+	vertical-align: top;
+}
+
+<!--Cosas aun no puestas
+
+.mystyle {
+	vertical-align: top;
+	horizontal-align: center;
+}
+
+.panelAeropuertos td {
+	vertical-align: top;
+}
+
+.pie_pagina { 
+	position: absolute;	
+	bottom:0px;
+	width: inherit;
+	height: 100px;	
+	background-color:red
+}
+ -->
+

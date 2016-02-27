@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd"
+	version="2.1">
+	<managed-bean>
+		<managed-bean-name>datePopup</managed-bean-name>
+		<managed-bean-class>com.atrium.formbeans.DatePopupBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+		<managed-bean>
+		<managed-bean-name>cuerpoBean</managed-bean-name>
+		<managed-bean-class>com.atrium.formbeans.CuerpoBean</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>reservaBean</managed-bean-name>
+		<managed-bean-class>com.atrium.formbeans.ReservaBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+
+		<managed-property>
+			<property-name>gestion_aeropuertos</property-name>
+			<value>#{gestion_aeropuertos}</value>
+		</managed-property>
+
+		<managed-property>
+			<property-name>gestion_vuelos</property-name>
+			<value>#{gestion_vuelos}</value>
+		</managed-property>
+
+		<managed-property>
+			<property-name>gestion_compañias</property-name>
+			<value>#{gestion_compañias}</value>
+		</managed-property>
+
+
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>modalDialogBean</managed-bean-name>
+		<managed-bean-class>com.atrium.formbeans.ModalDialogBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>imagenesBean</managed-bean-name>
+		<managed-bean-class>com.atrium.formbeans.ImagenesBean</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+
+	<!-- *** MODIFICACION DE PARAMETROS DE FUNCIONAMIENTO DE JSF *** -->
+	<application>
+		<!-- CAMBIAMOS EL CONSTRUCTOR DE MANAGEDBEANS POR APPLICATIONCONTEXT DE 
+			SPRING PARA PODER INYECTAR PROPIEDADES DESDE SPRING -->
+		<el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver>
+	</application>
+</faces-config>

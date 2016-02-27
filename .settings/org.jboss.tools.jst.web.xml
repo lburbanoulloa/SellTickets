@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file-systems VERSION="2.0.0" application-name="Deberes2"
+ model-entity="FileSystems" workspace-home="./WebRoot/WEB-INF">
+ <file-system NAME="WEB-INF" location="%workspace.home%" model-entity="FileSystemFolder"/>
+ <file-system NAME="WEB-ROOT" info="Content-Type=Web"
+  location="%workspace.home%/.." model-entity="FileSystemFolder"/>
+ <file-system NAME="src" location="%workspace.home%/../../src" model-entity="FileSystemFolder"/>
+ <file-system NAME="lib" location="%workspace.home%/lib" model-entity="FileSystemFolder"/>
+ <file-system NAME="classes" location="%workspace.home%/classes" model-entity="FileSystemFolder"/>
+ <file-system NAME="Deberes2" location="%eclipse.project%" model-entity="FileSystemFolder"/>
+ <file-system NAME="lib-resources.jar"
+  location="C:\Java\jre7\lib\resources.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jfr.jar" location="C:\Java\jre7\lib\jfr.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-access-bridge-32.jar"
+  location="C:\Java\jre7\lib\ext\access-bridge-32.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-dnsns.jar"
+  location="C:\Java\jre7\lib\ext\dnsns.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jaccess.jar"
+  location="C:\Java\jre7\lib\ext\jaccess.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-localedata.jar"
+  location="C:\Java\jre7\lib\ext\localedata.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunec.jar"
+  location="C:\Java\jre7\lib\ext\sunec.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunjce_provider.jar"
+  location="C:\Java\jre7\lib\ext\sunjce_provider.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunmscapi.jar"
+  location="C:\Java\jre7\lib\ext\sunmscapi.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunpkcs11.jar"
+  location="C:\Java\jre7\lib\ext\sunpkcs11.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-zipfs.jar"
+  location="C:\Java\jre7\lib\ext\zipfs.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javaee.jar"
+  location="G:\eclipse_kepler\plugins\com.genuitec.eclipse.j2eedt.core_11.5.0.me201311281640\data\libraryset\EE_5\javaee.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jstl-1.2.jar"
+  location="G:\eclipse_kepler\plugins\com.genuitec.eclipse.j2eedt.core_11.5.0.me201311281640\data\libraryset\JSTL1.2\lib\jstl-1.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-cglib-2.2.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\346\1\.cp\myeclipse-data\3.3\lib\core\bytecode\cglib\cglib-2.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javassist-3.9.0.GA.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\346\1\.cp\myeclipse-data\3.3\lib\core\bytecode\javassist\javassist-3.9.0.GA.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-hibernate3.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\346\1\.cp\myeclipse-data\3.3\lib\core\hibernate3.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-collections-3.1.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\346\1\.cp\myeclipse-data\3.3\lib\core\required\commons-collections-3.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jta-1.1.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\346\1\.cp\myeclipse-data\3.3\lib\core\required\jta-1.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-log4j-1.2.14.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\346\1\.cp\myeclipse-data\3.3\lib\core\required\log4j-1.2.14.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-slf4j-api-1.5.8.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\346\1\.cp\myeclipse-data\3.3\lib\core\required\slf4j-api-1.5.8.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-slf4j-log4j12-1.5.8.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\346\1\.cp\myeclipse-data\3.3\lib\core\required\slf4j-log4j12-1.5.8.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-antlr-2.7.6.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\346\1\.cp\myeclipse-data\3.2\lib\core\antlr-2.7.6.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-ehcache-1.2.3.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\346\1\.cp\myeclipse-data\3.2\lib\core\ehcache-1.2.3.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-dom4j-1.6.1.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\346\1\.cp\myeclipse-data\3.1\lib\core\dom4j-1.6.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.aop-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.aop-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.asm-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.asm-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.aspects-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.aspects-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.beans-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.beans-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.context-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.context-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.context.support-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.context.support-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.core-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.core-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.expression-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.expression-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.instrument-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.instrument-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.instrument.tomcat-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.instrument.tomcat-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-aopalliance-1.0.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\deps\aopalliance-1.0.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-aspectjweaver-1.6.9.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\deps\aspectjweaver-1.6.9.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-cglib-nodep-2.2.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\deps\cglib-nodep-2.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-pool-1.5.3.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\deps\commons-pool-1.5.3.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-collections-3.2.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\deps\commons-collections-3.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-logging-1.1.1.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\deps\commons-logging-1.1.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-log4j-1.2.16.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\deps\log4j-1.2.16.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.jdbc-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.jdbc-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.orm-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.orm-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.transaction-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.transaction-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-c3p0-0.9.1.2.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\deps\c3p0-0.9.1.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-dbcp-1.4.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\deps\commons-dbcp-1.4.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.jms-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.jms-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.oxm-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.oxm-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.web-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.web-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.web.portlet-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.web.portlet-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.web.servlet-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.web.servlet-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.web.struts-3.1.1.RELEASE.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\dist\org.springframework.web.struts-3.1.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-beanutils-1.7.0.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\deps\commons-beanutils-1.7.0.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-fileupload-1.2.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\deps\commons-fileupload-1.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-httpclient-3.1.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\deps\commons-httpclient-3.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-lang-2.5.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\351\1\.cp\data\3.1\deps\commons-lang-2.5.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.faces-2.1.21.jar"
+  location="G:\eclipse_kepler\configuration\org.eclipse.osgi\bundles\344\1\.cp\data\2.1\Mojarra\javax.faces-2.1.21.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-icefaces.jar"
+  location="G:\eclipse_kepler\plugins\com.genuitec.eclipse.icefaces_11.0.1.me201308151823\data\org.icefaces\icefaces\3.3\icefaces.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-icefaces-ace.jar"
+  location="G:\eclipse_kepler\plugins\com.genuitec.eclipse.icefaces_11.0.1.me201308151823\data\org.icefaces\icefaces-ace\3.3\icefaces-ace.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-icefaces-compat.jar"
+  location="G:\eclipse_kepler\plugins\com.genuitec.eclipse.icefaces_11.0.1.me201308151823\data\org.icefaces\icefaces-compat\3.3\icefaces-compat.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-krysalis-jCharts-1.0.0-alpha-1.jar"
+  location="G:\eclipse_kepler\plugins\com.genuitec.eclipse.icefaces_11.0.1.me201308151823\data\net.sf.jcharts\krysalis-jCharts\1.0.0-alpha-1\krysalis-jCharts-1.0.0-alpha-1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jxl.jar"
+  location="G:\eclipse_kepler\plugins\com.genuitec.eclipse.icefaces_11.0.1.me201308151823\data\net.sourceforge.jexcelapi\jxl\2.6.8\jxl.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-logging.jar"
+  location="G:\eclipse_kepler\plugins\com.genuitec.eclipse.icefaces_11.0.1.me201308151823\data\commons-logging\1.1.1\commons-logging.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-icepush.jar"
+  location="G:\eclipse_kepler\plugins\com.genuitec.eclipse.icefaces_11.0.1.me201308151823\data\org.icepush\icepush\3.3\icepush.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-junit.jar"
+  location="G:\eclipse_kepler\plugins\org.junit_4.11.0.v201303080030\junit.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.hamcrest.core_1.3.0.v201303031735.jar"
+  location="G:\eclipse_kepler\plugins\org.hamcrest.core_1.3.0.v201303031735.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-ojdbc14.jar"
+  location="D:\repositorioGit\PortalDeReservas\WebRoot\WEB-INF\lib\ojdbc14.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-cupertino.jar"
+  location="D:\repositorioGit\PortalDeReservas\src\com\atrium\jar\cupertino.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-excite-bike.jar"
+  location="D:\repositorioGit\PortalDeReservas\src\com\atrium\jar\excite-bike.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-humanity.jar"
+  location="D:\repositorioGit\PortalDeReservas\src\com\atrium\jar\humanity.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunny.jar"
+  location="D:\repositorioGit\PortalDeReservas\src\com\atrium\jar\sunny.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-blitzer.jar"
+  location="D:\repositorioGit\PortalDeReservas\src\com\atrium\jar\blitzer.jar" model-entity="FileSystemJar"/>
+ <web SERVLET_VERSION="2.4" model-entity="JstWeb" model-path="/web.xml">
+  <module URI="/WEB-INF/faces-config.xml" model-entity="WebJSFModule"
+   model-path="/faces-config.xml" src="src" web-root="WEB-ROOT"/>
+ </web>
+</file-systems>

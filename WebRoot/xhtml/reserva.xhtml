@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+
+
+	<ace:panel id="panel_busqueda" styleClass="panel_busqueda">
+		<h:form id="busqueda">
+			<h:panelGrid id="panelContenido" columns="1">
+				<h:panelGrid id="panelIyV" columns="2">
+					<h:selectOneRadio value="#{reservaBean.idaYVuelta}">
+						<f:selectItem itemValue="true" itemLabel="Ida y vuelta" />
+						<f:selectItem itemValue="false" itemLabel="Solo ida" />
+						<ace:ajax execute="@this" render="busqueda" />
+					</h:selectOneRadio>
+				</h:panelGrid>
+				<h:panelGrid id="panelAeropuertos" columns="2">
+					<h:outputText id="origen" value="Origen" />
+
+					<ace:pushButton id="btnaorigen"
+						value="#{reservaBean.origen.nombreAeropuerto}"
+						actionListener="#{reservaBean.acciones}" />
+
+
+
+					<h:outputText value="Destino" />
+
+					<ace:pushButton id="btnadestino"
+						value="#{reservaBean.destino.nombreAeropuerto}"
+						actionListener="#{reservaBean.acciones}" />
+				</h:panelGrid>
+				<h:panelGrid id="panelFechasIda" columns="3">
+					<h:outputText value="Salida" />
+
+					<ace:dateTimeEntry id="calsalidad"
+						value="#{reservaBean.fechasalida}" timeZone="Canada/Mountain"
+						pattern="dd/MM/yyyy" renderAsPopup="#{datePopup.popup}" />
+
+					<ace:maskedEntry id="horasalida" mask="99:99" size="6"
+						value="#{reservaBean.horasalida}" labelPosition="top" />
+				</h:panelGrid>
+				
+				<h:panelGrid id="panelFechasVuelta" columns="3" rendered="#{reservaBean.idaYVuelta}">
+					<h:outputText value="Regreso" />
+					<ace:dateTimeEntry id="calregreso"
+						value="#{reservaBean.fecharegreso}" timeZone="Canada/Mountain"
+						pattern="dd/MM/yyyy" renderAsPopup="#{datePopup.popup}" />
+					<ace:maskedEntry id="horaregreso" mask="99:99" size="6"
+						value="#{reservaBean.horasalida}" labelPosition="top" />
+				</h:panelGrid>
+			
+				<h:panelGrid id="panelOtros" columns="4">
+
+					<h:outputText value="Pasajeros" />
+					<ace:simpleSelectOneMenu id="numeroadultos"
+						value="#{reservaBean.adultos}">
+						<f:selectItem itemValue="0" itemLabel="Adultos" />
+						<f:selectItems value="#{reservaBean.lista_numerosAdultos}" />
+					</ace:simpleSelectOneMenu>
+					<ace:simpleSelectOneMenu id="numeroniños"
+						value="#{reservaBean.niños}">
+						<f:selectItem itemValue="0" itemLabel="Niños" />
+						<f:selectItems value="#{reservaBean.lista_numerosNiños}" />
+					</ace:simpleSelectOneMenu>
+					<ace:simpleSelectOneMenu id="numerobebes"
+						value="#{reservaBean.bebes}">
+						<f:selectItem itemValue="0" itemLabel="Bebes" />
+						<f:selectItems value="#{reservaBean.lista_numerosBebes}" />
+					</ace:simpleSelectOneMenu>
+
+					<h:outputText value="Aerolineas" />
+					<ace:simpleSelectOneMenu id="saerolineas"
+						value="#{reservaBean.compañia}">
+						<f:selectItem itemValue="" itemLabel="Elija una compañía" />
+						<f:selectItems value="#{reservaBean.lista_compañias}"
+							var="compañia" itemValue="#{compañia}"
+							itemLabel="#{compañia.nombreCompañia}" />
+					</ace:simpleSelectOneMenu>
+
+					<h:outputText value="Clase" style="text-align: right;" />
+					<ace:simpleSelectOneMenu id="sclase" value="#{reservaBean.clase}">
+						<f:selectItem itemValue="0" itemLabel="Turista" />
+						<f:selectItem itemValue="1" itemLabel="Bussines" />
+					</ace:simpleSelectOneMenu>
+				</h:panelGrid>
+
+
+				<ace:pushButton id="btnenviar" value="Enviar"
+					actionListener="#{reservaBean.acciones}" />
+			</h:panelGrid>
+
+		</h:form>
+	</ace:panel>
+
+
+</ui:composition>

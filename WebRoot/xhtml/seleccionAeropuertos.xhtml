@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+
+	<h:form id="selecciona">
+		<ace:dialog id="myDialog" widgetVar="sampleDialog"
+			header="Listado de Aeropuertos" draggable="true" modal="true"
+			resizable="false" position="center" closable="true"
+			visible="#{reservaBean.ayudaaeropuertos_visible}">
+			<ace:ajax event="close"
+				listener="#{reservaBean.cierre_AyudaAeropuertos}" />
+			<ace:dataTable id="tablaaero"
+				value="#{reservaBean.lista_aeropuertos}" var="aeropuerto"
+				paginator="true" paginatorPosition="bottom" rows="10"
+				selectionMode="single" doubleClickSelect="true"
+				rowSelectListener="#{reservaBean.cargar_AeropuertoAyuda}">
+				<ace:column id="ciudadcell" headerText="Ciudad"
+					sortBy="#{aeropuerto.ciudadAeropuerto}">
+					<h:outputText id="ciudad_ayuda"
+						value="#{aeropuerto.ciudadAeropuerto}" />
+				</ace:column>
+				<ace:column id="nombrecell" headerText="Aeropuerto"
+					sortBy="#{aeropuerto.nombreAeropuerto}">
+					<h:outputText id="nombreayuda"
+						value="#{aeropuerto.nombreAeropuerto}" />
+				</ace:column>
+			</ace:dataTable>
+		</ace:dialog>
+	</h:form>
+
+</ui:composition>

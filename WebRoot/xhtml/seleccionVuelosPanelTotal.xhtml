@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+	<ace:panel id="panel_totalvuelos" styleClass="panel_totalvuelos" header="Total" visible="#{reservaBean.resumenVisible}">
+		<h:form id="totalvuelos">
+			<h:panelGrid columns="1">
+				<h:outputText id="valorIdaTrayecto" style="font:bold;" value="#{reservaBean.idaCompraCadenaOrigen}" rendered="#{reservaBean.idaCompraVisible}"/>
+				<h:outputText id="valorIdaFecha" value="#{reservaBean.idaCompraCadenaFecha}" rendered="#{reservaBean.idaCompraVisible}"/>
+				<h:outputText id="valorIdaTotal" style="font:lighter;"  value="#{reservaBean.idaCompraCadenaTotal}" rendered="#{reservaBean.idaCompraVisible}"/>
+				<br/>
+				<h:outputText id="valorVueltaTrayecto" style="font:bold;" value="#{reservaBean.vueltaCompraCadenaOrigen}" rendered="#{reservaBean.vueltaCompraVisible}"/>
+				<h:outputText id="valorVueltaFecha" value="#{reservaBean.vueltaCompraCadenaFecha}" rendered="#{reservaBean.vueltaCompraVisible}"/>
+				<h:outputText id="valorVueltaTotal" style="font:lighter;" value="#{reservaBean.vueltaCompraCadenaTotal}" rendered="#{reservaBean.vueltaCompraVisible}"/>
+				<br/>
+				<h:outputText id="valorTotal" value="#{reservaBean.totalCompraValue}" rendered="#{reservaBean.totalCompraVisible}"/>
+				<br/>
+				<ace:message id="mensajeAviso" for="valorTotal"
+					rendered="#{reservaBean.seleccionVueloError}" />
+				<ace:pushButton id="btnContinuar" value="Continuar compra" actionListener="#{reservaBean.acciones}" rendered="#{reservaBean.btnContinuarCompraVisible}"/>
+			</h:panelGrid>
+		</h:form>
+	</ace:panel>
+</ui:composition>
