@@ -6,12 +6,21 @@
 <hibernate-configuration>
 
 	<session-factory>
+	<!-- 
 		<property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
 		<property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
 		<property name="connection.username">system</property>
 		<property name="connection.password">master</property>
 		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
 		<property name="myeclipse.connection.profile">mastera</property>
+		-->
+		
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="connection.url">jdbc:mysql://127.6.97.2/vuelos_bbdd</property>
+		<property name="connection.username">adminz3sJKA1</property>
+		<property name="connection.password">127.6.97.2</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		
 		
 		<!-- 
 		<property name="show_sql">true</property>

@@ -42,7 +42,7 @@ public class ImagenesBean implements Serializable {
 	public void cargaListaImagenes() {
 		
 		String carpeta_principal_usuario = Acceso_ApplicationContext
-				.getServletContext().getRealPath("resources");
+				.getServletContext().getRealPath("/resources");
 		File carpeta = new File(carpeta_principal_usuario+"/imagenes/turismo/");
 		tabla_imagenes = carpeta.list();
 		

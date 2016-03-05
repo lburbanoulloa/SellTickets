@@ -43,15 +43,7 @@
 			<attribute name="owner.project.facets" value="jst.jsf.icefaces"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="src/com/atrium/jar/cupertino.jar"/>
-	<classpathentry kind="lib" path="src/com/atrium/jar/excite-bike.jar"/>
-	<classpathentry kind="lib" path="src/com/atrium/jar/humanity.jar"/>
-	<classpathentry kind="lib" path="src/com/atrium/jar/sunny.jar"/>
-	<classpathentry kind="lib" path="src/com/atrium/jar/blitzer.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="src/com/atrium/jar/mysql-connector-java-5.1.38-bin.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
