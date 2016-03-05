@@ -7,6 +7,9 @@
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
+  <listener>
+    <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+</listener>
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:com/atrium/spring/modelo.xml</param-value>
@@ -70,4 +73,8 @@
     <param-name>javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE</param-name>
     <param-value>true</param-value>
   </context-param>
+  <context-param>
+    <param-name>log4jConfigLocation</param-name>
+    <param-value>classpath:</param-value>
+</context-param>
 </web-app>
