@@ -75,6 +75,6 @@
   </context-param>
   <context-param>
     <param-name>log4jConfigLocation</param-name>
-    <param-value>classpath:</param-value>
+    <param-value>/logAplicacion.log</param-value>
 </context-param>
 </web-app>

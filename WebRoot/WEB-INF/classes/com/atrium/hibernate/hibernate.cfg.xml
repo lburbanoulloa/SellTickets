@@ -16,9 +16,9 @@
 		-->
 		
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
-		<property name="connection.url">jdbc:mysql://127.6.97.2/vuelos_bbdd</property>
+		<property name="connection.url">jdbc:mysql://127.0.0.1:3306/vuelos_bbdd</property>
 		<property name="connection.username">adminz3sJKA1</property>
-		<property name="connection.password">127.6.97.2</property>
+		<property name="connection.password">eUT9FPLaN9Tg</property>
 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
 		
 		
