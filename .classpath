@@ -44,6 +44,10 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="src/com/atrium/jar/mysql-connector-java-5.1.38-bin.jar"/>
+	<classpathentry exported="true" kind="lib" path="src/com/atrium/jar/mysql-connector-java-5.1.38-bin.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
