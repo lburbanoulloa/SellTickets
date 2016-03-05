@@ -148,17 +148,9 @@
  <file-system NAME="lib-org.hamcrest.core_1.3.0.v201303031735.jar"
   location="G:\eclipse_kepler\plugins\org.hamcrest.core_1.3.0.v201303031735.jar" model-entity="FileSystemJar"/>
  <file-system NAME="lib-ojdbc14.jar"
-  location="D:\repositorioGit\PortalDeReservas\WebRoot\WEB-INF\lib\ojdbc14.jar" model-entity="FileSystemJar"/>
- <file-system NAME="lib-cupertino.jar"
-  location="D:\repositorioGit\PortalDeReservas\src\com\atrium\jar\cupertino.jar" model-entity="FileSystemJar"/>
- <file-system NAME="lib-excite-bike.jar"
-  location="D:\repositorioGit\PortalDeReservas\src\com\atrium\jar\excite-bike.jar" model-entity="FileSystemJar"/>
- <file-system NAME="lib-humanity.jar"
-  location="D:\repositorioGit\PortalDeReservas\src\com\atrium\jar\humanity.jar" model-entity="FileSystemJar"/>
- <file-system NAME="lib-sunny.jar"
-  location="D:\repositorioGit\PortalDeReservas\src\com\atrium\jar\sunny.jar" model-entity="FileSystemJar"/>
- <file-system NAME="lib-blitzer.jar"
-  location="D:\repositorioGit\PortalDeReservas\src\com\atrium\jar\blitzer.jar" model-entity="FileSystemJar"/>
+  location="C:\Users\Luis-Lobo\git\Reservas\WebRoot\WEB-INF\lib\ojdbc14.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-mysql-connector-java-5.1.38-bin.jar"
+  location="C:\Users\Luis-Lobo\git\Reservas\src\com\atrium\jar\mysql-connector-java-5.1.38-bin.jar" model-entity="FileSystemJar"/>
  <web SERVLET_VERSION="2.4" model-entity="JstWeb" model-path="/web.xml">
   <module URI="/WEB-INF/faces-config.xml" model-entity="WebJSFModule"
    model-path="/faces-config.xml" src="src" web-root="WEB-ROOT"/>
